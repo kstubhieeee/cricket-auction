@@ -38,7 +38,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 2,
     currentBid: 2,
     status: "available",
-    photo: "/cricket-allrounder-portrait-vedant.jpg",
+    photo: "/vedant.jpg",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 2,
     currentBid: 2,
     status: "available",
-    photo: "/cricket-batting-allrounder-portrait-faiz.jpg",
+    photo: "/faiz.jpg",
   },
   // Platinum Players
   {
@@ -59,7 +59,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1.5,
     currentBid: 1.5,
     status: "available",
-    photo: "/cricket-batter-portrait-karan.jpg",
+    photo: "/karan.jpg",
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1.5,
     currentBid: 1.5,
     status: "available",
-    photo: "/cricket-bowler-portrait-aryan.jpg",
+    photo: "/aryan.jpg",
   },
   {
     id: 7,
@@ -79,7 +79,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1.5,
     currentBid: 1.5,
     status: "available",
-    photo: "/cricket-bowler-portrait-mishra.jpg",
+    photo: "/mishra.jpg",
   },
   {
     id: 8,
@@ -89,7 +89,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1.5,
     currentBid: 1.5,
     status: "available",
-    photo: "/cricket-allrounder-portrait-ravi.jpg",
+    photo: "/ravi.jpg",
   },
   // Gold Players
   {
@@ -100,7 +100,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1,
     currentBid: 1,
     status: "available",
-    photo: "/cricket-batter-portrait-nishant.jpg",
+    photo: "/nishant.jpg",
   },
   {
     id: 10,
@@ -110,7 +110,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1,
     currentBid: 1,
     status: "available",
-    photo: "/cricket-allrounder-portrait-shrey.jpg",
+    photo: "/shrey.jpg",
   },
   {
     id: 11,
@@ -120,7 +120,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1,
     currentBid: 1,
     status: "available",
-    photo: "/cricket-bowler-portrait-aaditya.jpg",
+    photo: "/aaditya.jpg",
   },
   // Silver Players
   {
@@ -141,12 +141,12 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 0.5,
     currentBid: 0.5,
     status: "available",
-    photo: "/cricket-player-portrait-dhavale.jpg",
+    photo: "/dhavale.png",
   },
   {
     id: 14,
     name: "Rajnish",
-    role: "Player",
+    role: "bowling all-rounder",
     category: "Silver",
     basePrice: 0.5,
     currentBid: 0.5,
