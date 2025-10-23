@@ -275,7 +275,7 @@ export default function AuctionPage() {
     captain: "Kaustubh",
     players: [],
     totalSpent: 0,
-    balance: 15,
+    balance: 25,
   })
 
   const [teamB, setTeamB] = useState<Team>({
@@ -283,7 +283,7 @@ export default function AuctionPage() {
     captain: "Mourya",
     players: [],
     totalSpent: 0,
-    balance: 15,
+    balance: 25,
   })
 
   if (auctionEnded) {
