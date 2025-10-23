@@ -18,7 +18,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 2,
     currentBid: 2,
     status: "available",
-    photo: "/cricket-player-portrait-asmit.jpg",
+    photo: "/asmit.jpg",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 2,
     currentBid: 2,
     status: "available",
-    photo: "/cricket-batter-portrait-ujjwal.jpg",
+    photo: "/ujjwal.jpg",
   },
   {
     id: 3,
