@@ -10,15 +10,6 @@ import type { Player, Team } from "@/types/auction"
 
 const INITIAL_PLAYERS: Player[] = [
   {
-    id: 1,
-    name: "Karan",
-    role: "Captain",
-    basePrice: 1.5,
-    currentBid: 1.5,
-    status: "available",
-    photo: "/karan.jpg",
-  },
-  {
     id: 2,
     name: "Kaustubh Bane",
     role: "Player",
@@ -116,15 +107,6 @@ const INITIAL_PLAYERS: Player[] = [
     currentBid: 1.5,
     status: "available",
     photo: "/mishra.jpg",
-  },
-  {
-    id: 13,
-    name: "Ravi",
-    role: "Captain",
-    basePrice: 1.5,
-    currentBid: 1.5,
-    status: "available",
-    photo: "/ravi.jpg",
   },
   {
     id: 14,
@@ -293,7 +275,17 @@ export default function AuctionPage() {
   const [teamA, setTeamA] = useState<Team>({
     name: "IIT Dholakpur",
     captain: "Karan",
-    players: [],
+    players: [
+      {
+        id: 1,
+        name: "Karan",
+        role: "Captain",
+        basePrice: 1.5,
+        currentBid: 1.5,
+        status: "sold",
+        photo: "/karan.jpg",
+      },
+    ],
     totalSpent: 0,
     balance: 30,
   })
@@ -301,7 +293,17 @@ export default function AuctionPage() {
   const [teamB, setTeamB] = useState<Team>({
     name: "AIIMS Mira Road",
     captain: "Ravi",
-    players: [],
+    players: [
+      {
+        id: 13,
+        name: "Ravi",
+        role: "Captain",
+        basePrice: 1.5,
+        currentBid: 1.5,
+        status: "sold",
+        photo: "/ravi.jpg",
+      },
+    ],
     totalSpent: 0,
     balance: 30,
   })
