@@ -54,7 +54,7 @@ export function AuctionHeader({
               </div>
               {auctionStarted && currentPlayer && (
                 <div className="text-xs text-muted-foreground mt-1">
-                  {currentPlayer.role} • {currentPlayer.category}
+                  {currentPlayer.role}
                 </div>
               )}
             </div>

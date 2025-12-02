@@ -12,7 +12,7 @@ interface CurrentBidProps {
   auctionStarted: boolean
   lastBidder: "A" | "B" | null
   needsRandomPick: boolean
-  currentCategory: string
+  unsoldAuctionPhase: boolean
   onPickRandom: () => void
   onBidA: () => void
   onBidB: () => void
@@ -25,7 +25,7 @@ export function CurrentBid({
   auctionStarted,
   lastBidder,
   needsRandomPick,
-  currentCategory,
+  unsoldAuctionPhase,
   onPickRandom,
   onBidA,
   onBidB,
@@ -52,10 +52,14 @@ export function CurrentBid({
         <div className="text-center space-y-6">
           <Shuffle className="h-16 w-16 mx-auto text-primary animate-pulse" />
           <div>
-            <h3 className="text-3xl font-bold text-balance">Pick Next Player</h3>
-            <p className="text-muted-foreground mt-2 text-lg">
-              Current Category: <span className="font-semibold text-foreground">{currentCategory}</span>
-            </p>
+            <h3 className="text-3xl font-bold text-balance">
+              {unsoldAuctionPhase ? "Unsold Players Auction" : "Pick Next Player"}
+            </h3>
+            {unsoldAuctionPhase && (
+              <p className="text-muted-foreground mt-2 text-lg">
+                Bidding on previously unsold players
+              </p>
+            )}
           </div>
           <Button onClick={onPickRandom} size="lg" className="h-16 text-xl font-bold px-12">
             <Shuffle className="mr-2 h-6 w-6" />
@@ -88,20 +92,6 @@ export function CurrentBid({
       {/* Main Player Card */}
       <Card className="p-8 bg-gradient-to-br from-card to-muted/20">
         <div className="text-center space-y-6">
-          {/* Category Badge */}
-          <div className="flex justify-center">
-            <Badge
-              variant={player.category === "Diamond" ? "default" : "secondary"}
-              className={
-                player.category === "Diamond"
-                  ? "bg-accent text-accent-foreground text-lg px-4 py-1"
-                  : "bg-primary/10 text-primary text-lg px-4 py-1"
-              }
-            >
-              {player.category} Player
-            </Badge>
-          </div>
-
           {/* Player Profile Photo */}
           <div className="flex justify-center">
             <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-lg">

@@ -9,149 +9,158 @@ import { AuctionEndScreen } from "@/components/auction-end-screen"
 import type { Player, Team } from "@/types/auction"
 
 const INITIAL_PLAYERS: Player[] = [
-  // Diamond Players
   {
     id: 1,
-    name: "Asmit",
-    role: "All-rounder",
-    category: "Diamond",
-    basePrice: 2,
-    currentBid: 2,
-    status: "available",
-    photo: "/asmit.jpg",
-  },
-  {
-    id: 2,
-    name: "Ujjwal",
-    role: "Batter",
-    category: "Diamond",
-    basePrice: 2,
-    currentBid: 2,
-    status: "available",
-    photo: "/ujjwal.jpg",
-  },
-  {
-    id: 3,
-    name: "Vedant",
-    role: "All-rounder",
-    category: "Diamond",
-    basePrice: 2,
-    currentBid: 2,
-    status: "available",
-    photo: "/vedant.jpg",
-  },
-  {
-    id: 4,
-    name: "Faiz",
-    role: "Batting All-rounder",
-    category: "Diamond",
-    basePrice: 2,
-    currentBid: 2,
-    status: "available",
-    photo: "/faiz.jpg",
-  },
-  // Platinum Players
-  {
-    id: 5,
     name: "Karan",
-    role: "Batter",
-    category: "Platinum",
+    role: "Captain",
     basePrice: 1.5,
     currentBid: 1.5,
     status: "available",
     photo: "/karan.jpg",
   },
   {
+    id: 2,
+    name: "Kaustubh Bane",
+    role: "Player",
+    basePrice: 1.5,
+    currentBid: 1.5,
+    status: "available",
+    photo: "/placeholder-user.jpg",
+  },
+  {
+    id: 3,
+    name: "Aaditya Mourya",
+    role: "Player",
+    basePrice: 1,
+    currentBid: 1,
+    status: "available",
+    photo: "/aaditya.jpg",
+  },
+  {
+    id: 4,
+    name: "Sujal",
+    role: "Player",
+    basePrice: 1,
+    currentBid: 1,
+    status: "available",
+    photo: "/placeholder-user.jpg",
+  },
+  {
+    id: 5,
+    name: "Ujjwal",
+    role: "Player",
+    basePrice: 2,
+    currentBid: 2,
+    status: "available",
+    photo: "/ujjwal.jpg",
+  },
+  {
     id: 6,
-    name: "Aryan",
-    role: "Bowler",
-    category: "Platinum",
-    basePrice: 1.5,
-    currentBid: 1.5,
-    status: "available",
-    photo: "/aryan.jpg",
-  },
-  {
-    id: 7,
-    name: "Mishra",
-    role: "Bowler",
-    category: "Platinum",
-    basePrice: 1.5,
-    currentBid: 1.5,
-    status: "available",
-    photo: "/mishra.jpg",
-  },
-  {
-    id: 8,
-    name: "Ravi",
-    role: "All-rounder",
-    category: "Platinum",
-    basePrice: 1.5,
-    currentBid: 1.5,
-    status: "available",
-    photo: "/ravi.jpg",
-  },
-  // Gold Players
-  {
-    id: 9,
     name: "Nishant",
-    role: "Batter",
-    category: "Gold",
+    role: "Player",
     basePrice: 1,
     currentBid: 1,
     status: "available",
     photo: "/nishant.jpg",
   },
   {
-    id: 10,
-    name: "Shrey",
-    role: "All-rounder",
-    category: "Gold",
-    basePrice: 1,
-    currentBid: 1,
-    status: "available",
-    photo: "/shrey.jpg",
-  },
-  {
-    id: 11,
-    name: "Aaditya",
-    role: "Bowler",
-    category: "Gold",
-    basePrice: 1,
-    currentBid: 1,
-    status: "available",
-    photo: "/aaditya.jpg",
-  },
-  // Silver Players
-  {
-    id: 12,
-    name: "Shrey ka bhai",
+    id: 7,
+    name: "Aaditya M",
     role: "Player",
-    category: "Silver",
+    basePrice: 1.5,
+    currentBid: 1.5,
+    status: "available",
+    photo: "/placeholder-user.jpg",
+  },
+  {
+    id: 8,
+    name: "Lucky",
+    role: "Player",
     basePrice: 0.5,
     currentBid: 0.5,
     status: "available",
-    photo: "/cricket-player-portrait.jpg",
+    photo: "/placeholder-user.jpg",
   },
   {
-    id: 13,
+    id: 9,
+    name: "Asmit",
+    role: "Player",
+    basePrice: 2,
+    currentBid: 2,
+    status: "available",
+    photo: "/asmit.jpg",
+  },
+  {
+    id: 10,
     name: "Dhavale",
     role: "Player",
-    category: "Silver",
     basePrice: 0.5,
     currentBid: 0.5,
     status: "available",
     photo: "/dhavale.png",
   },
   {
+    id: 11,
+    name: "Vedant",
+    role: "Player",
+    basePrice: 2,
+    currentBid: 2,
+    status: "available",
+    photo: "/vedant.jpg",
+  },
+  {
+    id: 12,
+    name: "Mishra",
+    role: "Player",
+    basePrice: 1.5,
+    currentBid: 1.5,
+    status: "available",
+    photo: "/mishra.jpg",
+  },
+  {
+    id: 13,
+    name: "Ravi",
+    role: "Captain",
+    basePrice: 1.5,
+    currentBid: 1.5,
+    status: "available",
+    photo: "/ravi.jpg",
+  },
+  {
     id: 14,
     name: "Rajnish",
-    role: "bowling all-rounder",
-    category: "Silver",
-    basePrice: 0.5,
-    currentBid: 0.5,
+    role: "Player",
+    basePrice: 1.5,
+    currentBid: 1.5,
     status: "available",
-    photo: "/cricket-player-portrait-rajnish.jpg",
+    photo: "/placeholder-user.jpg",
+  },
+  {
+    id: 15,
+    name: "Kaustubh Rane",
+    role: "Player",
+    basePrice: 1.5,
+    currentBid: 1.5,
+    status: "available",
+    photo: "/placeholder-user.jpg",
+  },
+  {
+    id: 16,
+    name: "Naman",
+    role: "Player",
+    basePrice: 2,
+    currentBid: 2,
+    status: "available",
+    photo: "/placeholder-user.jpg",
+  },
+  {
+    id: 17,
+    name: "Faiz",
+    role: "Player",
+    basePrice: 2,
+    currentBid: 2,
+    status: "available",
+    photo: "/faiz.jpg",
   },
 ]
 
@@ -162,47 +171,46 @@ export default function AuctionPage() {
   const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0)
   const [lastBidder, setLastBidder] = useState<"A" | "B" | null>(null)
   const [needsRandomPick, setNeedsRandomPick] = useState(true)
-  const [currentCategory, setCurrentCategory] = useState<string>("Diamond")
+  const [unsoldAuctionPhase, setUnsoldAuctionPhase] = useState(false)
 
   const currentPlayer = players[currentPlayerIndex]
   const availablePlayers = players.filter((p) => p.status === "available")
+  const unsoldPlayers = players.filter((p) => p.status === "unsold")
 
   const handleStartAuction = () => {
     setAuctionStarted(true)
     setAuctionEnded(false)
     setNeedsRandomPick(true)
-    setCurrentCategory("Diamond")
+    setUnsoldAuctionPhase(false)
   }
 
   const handlePickRandom = () => {
-    const categoryOrder = ["Diamond", "Platinum", "Gold", "Silver"]
+    const availablePlayers = players.filter((p) => p.status === "available")
+    const unsoldPlayers = players.filter((p) => p.status === "unsold")
 
-    let availableInCategory = players.filter((p) => p.status === "available" && p.category === currentCategory)
-
-    if (availableInCategory.length === 0) {
-      const currentCategoryIndex = categoryOrder.indexOf(currentCategory)
-      let nextCategoryIndex = currentCategoryIndex + 1
-
-      while (nextCategoryIndex < categoryOrder.length) {
-        const nextCategory = categoryOrder[nextCategoryIndex]
-        availableInCategory = players.filter((p) => p.status === "available" && p.category === nextCategory)
-
-        if (availableInCategory.length > 0) {
-          setCurrentCategory(nextCategory)
-          break
-        }
-        nextCategoryIndex++
-      }
-
-      if (availableInCategory.length === 0) {
+    if (availablePlayers.length === 0) {
+      if (!unsoldAuctionPhase && unsoldPlayers.length > 0) {
+        const randomIndex = Math.floor(Math.random() * unsoldPlayers.length)
+        const randomPlayer = unsoldPlayers[randomIndex]
+        const playerIndex = players.findIndex((p) => p.id === randomPlayer.id)
+        
+        setUnsoldAuctionPhase(true)
+        setPlayers((prev) =>
+          prev.map((p) => (p.status === "unsold" ? { ...p, status: "available" as const, currentBid: p.basePrice } : p))
+        )
+        setCurrentPlayerIndex(playerIndex)
+        setNeedsRandomPick(false)
+        setLastBidder(null)
+        return
+      } else {
         setAuctionStarted(false)
         setAuctionEnded(true)
         return
       }
     }
 
-    const randomIndex = Math.floor(Math.random() * availableInCategory.length)
-    const randomPlayer = availableInCategory[randomIndex]
+    const randomIndex = Math.floor(Math.random() * availablePlayers.length)
+    const randomPlayer = availablePlayers[randomIndex]
     const playerIndex = players.findIndex((p) => p.id === randomPlayer.id)
 
     setCurrentPlayerIndex(playerIndex)
@@ -214,8 +222,14 @@ export default function AuctionPage() {
     if (!currentPlayer || currentPlayer.status !== "available") return
 
     const bidIncrement = 0.25
-    const newBid = currentPlayer.currentBid + bidIncrement
     const biddingTeam = team === "A" ? teamA : teamB
+    
+    let newBid: number
+    if (lastBidder === null) {
+      newBid = currentPlayer.basePrice
+    } else {
+      newBid = currentPlayer.currentBid + bidIncrement
+    }
 
     if (newBid > biddingTeam.balance + (lastBidder === team ? currentPlayer.currentBid - currentPlayer.basePrice : 0)) {
       alert(`${biddingTeam.name} doesn't have enough balance!`)
@@ -259,7 +273,13 @@ export default function AuctionPage() {
   const handleUnsold = () => {
     if (!currentPlayer) return
 
-    setPlayers((prev) => prev.map((p) => (p.id === currentPlayer.id ? { ...p, status: "unsold" as const } : p)))
+    setPlayers((prev) =>
+      prev.map((p) =>
+        p.id === currentPlayer.id
+          ? { ...p, status: "unsold" as const, currentBid: p.basePrice }
+          : p
+      )
+    )
 
     setNeedsRandomPick(true)
     setLastBidder(null)
@@ -271,19 +291,19 @@ export default function AuctionPage() {
   }
 
   const [teamA, setTeamA] = useState<Team>({
-    name: "Kaustubh's Pirates",
-    captain: "Kaustubh",
+    name: "Team A",
+    captain: "Karan",
     players: [],
     totalSpent: 0,
-    balance: 25,
+    balance: 30,
   })
 
   const [teamB, setTeamB] = useState<Team>({
-    name: "Mourya's Shadows",
-    captain: "Mourya",
+    name: "Team B",
+    captain: "Ravi",
     players: [],
     totalSpent: 0,
-    balance: 25,
+    balance: 30,
   })
 
   if (auctionEnded) {
@@ -315,7 +335,7 @@ export default function AuctionPage() {
               auctionStarted={auctionStarted}
               lastBidder={lastBidder}
               needsRandomPick={needsRandomPick}
-              currentCategory={currentCategory}
+              unsoldAuctionPhase={unsoldAuctionPhase}
               onPickRandom={handlePickRandom}
               onBidA={() => handleBid("A")}
               onBidB={() => handleBid("B")}

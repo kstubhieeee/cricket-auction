@@ -10,11 +10,6 @@ interface PlayerListProps {
 }
 
 export function PlayerList({ players, currentPlayer }: PlayerListProps) {
-  const diamondPlayers = players.filter((p) => p.category === "Diamond")
-  const platinumPlayers = players.filter((p) => p.category === "Platinum")
-  const goldPlayers = players.filter((p) => p.category === "Gold")
-  const silverPlayers = players.filter((p) => p.category === "Silver")
-
   const getStatusIcon = (status: Player["status"]) => {
     switch (status) {
       case "sold":
@@ -51,62 +46,10 @@ export function PlayerList({ players, currentPlayer }: PlayerListProps) {
   return (
     <div className="space-y-6">
       <Card className="p-4">
-        <div className="space-y-4">
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <Badge variant="default" className="bg-accent text-accent-foreground">
-                Diamond
-              </Badge>
-              <span className="text-xs text-muted-foreground">₹2 Cr base</span>
-            </div>
-            <div className="space-y-2">
-              {diamondPlayers.map((player) => (
-                <PlayerCard key={player.id} player={player} />
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <Badge variant="secondary" className="bg-primary/10 text-primary">
-                Platinum
-              </Badge>
-              <span className="text-xs text-muted-foreground">₹1.5 Cr base</span>
-            </div>
-            <div className="space-y-2">
-              {platinumPlayers.map((player) => (
-                <PlayerCard key={player.id} player={player} />
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <Badge variant="secondary" className="bg-yellow-500/20 text-yellow-700 dark:text-yellow-400">
-                Gold
-              </Badge>
-              <span className="text-xs text-muted-foreground">₹1 Cr base</span>
-            </div>
-            <div className="space-y-2">
-              {goldPlayers.map((player) => (
-                <PlayerCard key={player.id} player={player} />
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <div className="flex items-center gap-2 mb-3">
-              <Badge variant="secondary" className="bg-slate-300/20 text-slate-700 dark:text-slate-300">
-                Silver
-              </Badge>
-              <span className="text-xs text-muted-foreground">₹0.5 Cr base</span>
-            </div>
-            <div className="space-y-2">
-              {silverPlayers.map((player) => (
-                <PlayerCard key={player.id} player={player} />
-              ))}
-            </div>
-          </div>
+        <div className="space-y-2">
+          {players.map((player) => (
+            <PlayerCard key={player.id} player={player} />
+          ))}
         </div>
       </Card>
     </div>

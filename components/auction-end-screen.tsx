@@ -95,9 +95,6 @@ export function AuctionEndScreen({ teamA, teamB }: AuctionEndScreenProps) {
                             </div>
                           </div>
                           <div className="text-right">
-                            <Badge variant="secondary" className="mb-1">
-                              {player.category}
-                            </Badge>
                             <div className="text-lg font-bold text-primary">₹{player.currentBid.toFixed(2)} Cr</div>
                           </div>
                         </div>
@@ -173,9 +170,6 @@ export function AuctionEndScreen({ teamA, teamB }: AuctionEndScreenProps) {
                             </div>
                           </div>
                           <div className="text-right">
-                            <Badge variant="secondary" className="mb-1">
-                              {player.category}
-                            </Badge>
                             <div className="text-lg font-bold text-accent">₹{player.currentBid.toFixed(2)} Cr</div>
                           </div>
                         </div>
