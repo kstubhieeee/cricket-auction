@@ -25,7 +25,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1.5,
     currentBid: 1.5,
     status: "available",
-    photo: "/placeholder-user.jpg",
+    photo: "/kaustubh.png",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1,
     currentBid: 1,
     status: "available",
-    photo: "/aaditya.jpg",
+    photo: "/mourya.jpg",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1,
     currentBid: 1,
     status: "available",
-    photo: "/placeholder-user.jpg",
+    photo: "/sujal.jpg",
   },
   {
     id: 5,
@@ -65,12 +65,12 @@ const INITIAL_PLAYERS: Player[] = [
   },
   {
     id: 7,
-    name: "Aaditya M",
+    name: "Aaditya",
     role: "Player",
     basePrice: 1.5,
     currentBid: 1.5,
     status: "available",
-    photo: "/placeholder-user.jpg",
+    photo: "/aaditya.jpg",
   },
   {
     id: 8,
@@ -79,7 +79,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 0.5,
     currentBid: 0.5,
     status: "available",
-    photo: "/placeholder-user.jpg",
+    photo: "/lucky.jpg",
   },
   {
     id: 9,
@@ -133,7 +133,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1.5,
     currentBid: 1.5,
     status: "available",
-    photo: "/placeholder-user.jpg",
+    photo: "/rajnish.jpg",
   },
   {
     id: 15,
@@ -142,7 +142,7 @@ const INITIAL_PLAYERS: Player[] = [
     basePrice: 1.5,
     currentBid: 1.5,
     status: "available",
-    photo: "/placeholder-user.jpg",
+    photo: "/kaustubhr.jpeg",
   },
   {
     id: 16,
@@ -193,7 +193,7 @@ export default function AuctionPage() {
         const randomIndex = Math.floor(Math.random() * unsoldPlayers.length)
         const randomPlayer = unsoldPlayers[randomIndex]
         const playerIndex = players.findIndex((p) => p.id === randomPlayer.id)
-        
+
         setUnsoldAuctionPhase(true)
         setPlayers((prev) =>
           prev.map((p) => (p.status === "unsold" ? { ...p, status: "available" as const, currentBid: p.basePrice } : p))
@@ -223,7 +223,7 @@ export default function AuctionPage() {
 
     const bidIncrement = 0.25
     const biddingTeam = team === "A" ? teamA : teamB
-    
+
     let newBid: number
     if (lastBidder === null) {
       newBid = currentPlayer.basePrice
