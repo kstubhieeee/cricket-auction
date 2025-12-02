@@ -291,7 +291,7 @@ export default function AuctionPage() {
   }
 
   const [teamA, setTeamA] = useState<Team>({
-    name: "Team A",
+    name: "IIT Dholakpur",
     captain: "Karan",
     players: [],
     totalSpent: 0,
@@ -299,7 +299,7 @@ export default function AuctionPage() {
   })
 
   const [teamB, setTeamB] = useState<Team>({
-    name: "Team B",
+    name: "AIIMS Mira Road",
     captain: "Ravi",
     players: [],
     totalSpent: 0,
