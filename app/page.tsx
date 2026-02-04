@@ -29,15 +29,6 @@ const INITIAL_PLAYERS: Player[] = [
   },
   
   {
-    id: 6,
-    name: "Vedant",
-    role: "Player",
-    basePrice: 2,
-    currentBid: 2,
-    status: "available",
-    photo: "/vedant.jpg",
-  },
-  {
     id: 7,
     name: "Asmit",
     role: "Player",
@@ -81,15 +72,6 @@ const INITIAL_PLAYERS: Player[] = [
     currentBid: 1.5,
     status: "available",
     photo: "/amit.jpg",
-  },
-  {
-    id: 12,
-    name: "Anurag",
-    role: "Player",
-    basePrice: 0.5,
-    currentBid: 0.5,
-    status: "available",
-    photo: "/anurag.jpg",
   },
   {
     id: 13,
